@@ -148,7 +148,7 @@ public class Controlador extends HttpServlet {
                     c.setEs(est1);
                     c.setId(idc);
                     cdao.actualizar(c);
-                    request.getRequestDispatcher("Controlador=Listar").forward(request, response);
+                    request.getRequestDispatcher("Controlador?menu=Cliente&accion=Listar").forward(request, response);
                 }
                 case "Delete" -> {
                     idc = Integer.parseInt(request.getParameter("id"));
